@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Projeto 1</title>
+</head>
+
+<body>
+
+    <!-- Seção da área de pesquisa da página -->
+    <section class="area-pesquisa">
+
+        <p class="github">GITHUB</p>
+
+        <input type="text" class="barra-pesquisa" placeholder="Digite o nome">
+
+        <button type="button" onclick="fetchUser()">Buscar</button>
+        <!--FetchUser será "iniciado" pelo evento Onclick
+            (quando o usuário clicar no botão)-->
+    </section>
+    <!---->
+
+    <section class="instrucoes">
+        <p>Digite o nome do usuário do GitHub que deseja pesquisar</p>
+    </section>
+    <!-- Seção do resultado da pesquisa da página -->
+    <section class="area-resultado">
+        <div class="titulo">
+            <h1 class="nome"></h1>
+            <small class="bio"></small>
+        </div>
+
+        <img class="avatar" src="" alt="">
+
+        <div class="info">
+            <div class="info-item">
+                <p> Seguidores: </p>
+                <div class="repos"></div>
+            </div>
+
+            <div class="info-item">
+                <p>Repósitórios: </p>
+                <div class="followers"></div>
+            </div>
+        </div>
+    </section>
+    <!---->
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+
+</html
